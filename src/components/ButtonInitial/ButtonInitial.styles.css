@@ -1,0 +1,47 @@
+.ButtonInitial {
+  width: 10em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #dd1e10;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ButtonInitial::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #242424;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.ButtonInitial::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #242424;
+  transition: 0.5s;
+}
+
+.ButtonInitial:hover::before,
+.ButtonInitial:hover::after {
+  transform: scale(0);
+}
+
+.ButtonInitial:hover {
+  box-shadow: inset 0px 0px 25px #dd1e10;
+  border-color: #dd1e10;
+}
