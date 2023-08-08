@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import backgroundHeader from "../../assets/Images/fundo.jpg";
 
 const fadeIn = keyframes`
   from { 
@@ -20,11 +19,19 @@ export const Container = styled.div`
   height: 100vh;
 `;
 
+export const Nav = styled.div`
+  display: flex;
+  align-items: end;
+  width: 100%;
+  justify-content: flex-start;
+  padding-right: 50px;
+  margin-top: 10px;
+`;
+
 export const ContainerHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(${backgroundHeader});
   width: 100%;
   height: 100%;
   color: white;

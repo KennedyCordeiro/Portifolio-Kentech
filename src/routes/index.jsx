@@ -9,24 +9,7 @@ const RoutesApp = () => {
   return (
     <BrowserRouter>
       <Fragment>
-        <Routes>
-          <Parallax pages={3} speed={1} id="0aesquerda">
-            <ParallaxLayer
-              offset={0}
-              speed={1}
-              factor={1}
-              style={{
-                backgroundImage: `url(${backgroundHeader})`,
-                backgroundSize: "cover",
-              }}
-            >
-              <Route exact path="*" element={<Home />} />
-            </ParallaxLayer>
-            <ParallaxLayer offset={1} speed={0.5}>
-              <Route exact path="/Comunicate" element={<Comunicate />} />
-            </ParallaxLayer>
-          </Parallax>
-        </Routes>
+        <h1>teste</h1>
       </Fragment>
     </BrowserRouter>
   );
