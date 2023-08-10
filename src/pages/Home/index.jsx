@@ -1,6 +1,7 @@
 import React from "react";
 import * as C from "./Home.styles";
 import NavBar from "../../components/Navbar";
+import kentech from "../../assets/Images/kentech.png";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
         <NavBar></NavBar>
       </C.Nav>
       <C.ContainerHeader>
-        <h1>Home</h1>
+        <img src={kentech} alt="Logo kentech" style={{ width: "600px" }}></img>
       </C.ContainerHeader>
     </C.Container>
   );
