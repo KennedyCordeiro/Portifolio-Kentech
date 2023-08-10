@@ -38,3 +38,8 @@ export const ContainerHeader = styled.div`
   //border-radius: 30px 0 0 30px;
   float: right;
 `;
+
+export const ContainerLogo = styled.div`
+  display: flex;
+  width: 600px;
+`;
